@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1E9DB; /* light beige */
+    color: #07020D; /* very dark */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    color: #07020D; /* very dark */
+}
+
+p {
+    color: #716A5C; /* dark beige */
+}
+
+a {
+    color: #5DB7DE; /* blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #A39B8B; /* greyish */
+    border-radius: 5px;
+    background-color: #F1E9DB; /* light beige */
+    color: #07020D; /* very dark */
+}
+
+input[type="submit"],
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5DB7DE; /* blue */
+    color: #F1E9DB; /* light beige */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #07020D; /* very dark */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #A39B8B;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+li strike {
+    color: #A39B8B; /* greyish */
+}
+
+li > a {
+    margin-left: auto;
+    padding: 0 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px; /* Increased max-width */
+    width: 100%;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #FFFFFF; /* white */
+    border: 1px solid #A39B8B; /* greyish */
+    border-radius: 5px;
+}
+
+nav {
+    width: 100%;
+    padding: 10px;
+    background-color: #07020D; /* very dark */
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: #F1E9DB; /* light beige */
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #5DB7DE; /* blue */
+    margin-right: 10px;
+}
+
+nav a:hover {
+    background-color: #07020D; /* very dark */
+    color: #5DB7DE; /* blue */
+}
+
+.nav-welcome {
+    color: #F1E9DB; /* light beige */
+    margin-right: auto;
+    padding-left: 10px;
+    font-size: 20px; /* Increase font size */
+    font-family: 'Georgia', serif;
+    align-self: center;
+}
