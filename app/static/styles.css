@@ -1,0 +1,164 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Form styles */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Contact grid styles */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-tile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.contact-tile h3 {
+    margin: 0 0 10px;
+}
+
+.contact-tile p {
+    margin: 5px 0;
+}
+
+.contact-options {
+    margin-top: 10px;
+}
+
+.contact-options a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-options a:hover {
+    background-color: #ccc;
+}
+
+/* Specific button styles */
+#search-button {
+    background-color: #007bff;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+#add-contact-button {
+    background-color: #28a745;
+}
+
+#add-contact-button:hover {
+    background-color: #218838;
+}
+
+#update-contact-button {
+    background-color: #ffc107;
+}
+
+#update-contact-button:hover {
+    background-color: #e0a800;
+}
+
+/* Style for the search form */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.search-form button {
+    width: auto;
+    padding: 10px 20px;
+}

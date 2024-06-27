@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="get" action="{{ url_for('search') }}">
+        <input type="text" name="query" placeholder="Search by name or phone number">
+        <button type="submit" id="search-button">Search</button>
+    </form>
+
+    <div class="contact-grid">
+        {% for contact in contacts %}
+            <div class="contact-tile">
+                <h3>{{ contact.name }}</h3>
+                <p>Phone: {{ contact.phone }}</p>
+                <div class="contact-options">
+                    <a href="{{ url_for('update_contact', contact_id=contact._id) }}">Edit</a>
+                    <a href="{{ url_for('delete_contact', contact_id=contact._id) }}">Delete</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
